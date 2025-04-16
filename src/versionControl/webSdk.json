@@ -1,10 +1,4 @@
 {
-  "callId": "80b6c89a85e94f7a8b818a961eb5da9e",
-  "errorCode": 0,
-  "apiVersion": 2,
-  "statusCode": 200,
-  "statusReason": "OK",
-  "time": "2025-04-16T14:08:50.617Z",
   "baseDomain": "stag.au.parent.gaspar.test",
   "dataCenter": "eu1",
   "trustedSiteURLs": [
@@ -36,12 +30,11 @@
   ],
   "enableDataSharing": true,
   "isCDP": false,
-  "globalConf": "undefined",
+  "globalConf": "testes",
   "invisibleRecaptcha": {},
   "recaptchaV2": {},
   "funCaptcha": {},
   "customAPIDomainPrefix": "",
   "jwtKeyVersion": 2,
-  "enableHSTS": false,
-  "context": "{\"id\":\"webSdk\",\"targetApiKey\":\"4_QwkHadMVg-KI68XYT2I3vA\"}"
+  "enableHSTS": false
 }
