@@ -1,10 +1,4 @@
 {
-  "callId": "694f33dc4371432fbf3e555c25a05ebf",
-  "errorCode": 0,
-  "apiVersion": 2,
-  "statusCode": 200,
-  "statusReason": "OK",
-  "time": "2025-04-16T16:51:26.489Z",
   "baseDomain": "testing_version_control",
   "dataCenter": "eu1",
   "trustedSiteURLs": [
@@ -33,11 +27,11 @@
   ],
   "enableDataSharing": true,
   "isCDP": false,
+  "globalConf": "undefined",
   "invisibleRecaptcha": {},
   "recaptchaV2": {},
   "funCaptcha": {},
   "customAPIDomainPrefix": "",
-  "jwtKeyVersion": 3,
-  "enableHSTS": false,
-  "context": "{\"id\":\"webSdk\",\"targetApiKey\":\"4_yB9eX0cBp04xuh0RPADT1A\"}"
+  "jwtKeyVersion": 2,
+  "enableHSTS": false
 }
