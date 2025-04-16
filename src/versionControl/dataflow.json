@@ -1,13 +1,6 @@
 {
-  "callId": "85c6cd73f98e413c8c1d55a6d8be59fd",
-  "context": "{\"id\":\"dataflows_search\",\"targetApiKey\":\"4_QwkHadMVg-KI68XYT2I3vA\"}",
-  "errorCode": 0,
-  "apiVersion": 2,
-  "statusCode": 200,
-  "statusReason": "OK",
-  "time": "2025-04-16T14:08:50.689Z",
-  "resultCount": 2,
-  "totalCount": 2,
+  "resultCount": 1,
+  "totalCount": 1,
   "result": [
     {
       "apiKey": "4_QwkHadMVg-KI68XYT2I3vA",
@@ -154,32 +147,6 @@
       "updateTime": "2024-07-24T15:37:29.554Z",
       "updatedByName": "Tiago Gaspar",
       "updatedByEmail": "tiago.gaspar@sap.com"
-    },
-    {
-      "apiKey": "4_QwkHadMVg-KI68XYT2I3vA",
-      "siteId": 894217597932,
-      "id": "fb546f885eb24d2596444cbb15512f6c",
-      "name": "Empty Flow",
-      "status": "published",
-      "description": "Empty Flow",
-      "steps": [
-        {
-          "id": "gigya.account",
-          "type": "datasource.read.gigya.account",
-          "params": {
-            "select": "accounts",
-            "from": "accounts",
-            "deltaField": "lastUpdatedTimestamp",
-            "batchSize": 300,
-            "maxConcurrency": 1,
-            "keepFieldNamesWithDotAsIs": false
-          }
-        }
-      ],
-      "version": 1,
-      "createTime": "2025-04-16T13:59:41.333Z",
-      "updateTime": "2025-04-16T13:59:41.333Z",
-      "updatedByEmail": "g.lopes@sap.com"
     }
   ]
 }
