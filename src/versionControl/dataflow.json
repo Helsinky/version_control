@@ -31,6 +31,32 @@
     {
       "apiKey": "4_QwkHadMVg-KI68XYT2I3vA",
       "siteId": 894217597932,
+      "id": "80baf371870941d5a33a9c922512a424",
+      "name": "Empty Flow",
+      "status": "draft",
+      "description": "Empty Flow",
+      "steps": [
+        {
+          "id": "gigya.account",
+          "type": "datasource.read.gigya.account",
+          "params": {
+            "select": "test",
+            "from": "accounts",
+            "deltaField": "lastUpdatedTimestamp",
+            "batchSize": 300,
+            "maxConcurrency": 1,
+            "keepFieldNamesWithDotAsIs": false
+          }
+        }
+      ],
+      "version": 1,
+      "createTime": "2025-04-16T15:08:15.945Z",
+      "updateTime": "2025-04-16T15:08:15.945Z",
+      "updatedByEmail": "g.lopes@sap.com"
+    },
+    {
+      "apiKey": "4_QwkHadMVg-KI68XYT2I3vA",
+      "siteId": 894217597932,
       "id": "c993c363397d4ba9930dd7b583304e14",
       "name": "Export from Gigya to SFTP",
       "status": "draft",
@@ -172,32 +198,6 @@
       "version": 1,
       "createTime": "2025-04-16T15:11:31.098Z",
       "updateTime": "2025-04-16T15:11:31.098Z",
-      "updatedByEmail": "g.lopes@sap.com"
-    },
-    {
-      "apiKey": "4_QwkHadMVg-KI68XYT2I3vA",
-      "siteId": 894217597932,
-      "id": "80baf371870941d5a33a9c922512a424",
-      "name": "Empty Flow",
-      "status": "draft",
-      "description": "Empty Flow",
-      "steps": [
-        {
-          "id": "gigya.account",
-          "type": "datasource.read.gigya.account",
-          "params": {
-            "select": "test",
-            "from": "accounts",
-            "deltaField": "lastUpdatedTimestamp",
-            "batchSize": 300,
-            "maxConcurrency": 1,
-            "keepFieldNamesWithDotAsIs": false
-          }
-        }
-      ],
-      "version": 1,
-      "createTime": "2025-04-16T15:08:15.945Z",
-      "updateTime": "2025-04-16T15:08:15.945Z",
       "updatedByEmail": "g.lopes@sap.com"
     },
     {
