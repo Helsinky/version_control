@@ -1,0 +1,47 @@
+{
+  "callId": "80b6c89a85e94f7a8b818a961eb5da9e",
+  "errorCode": 0,
+  "apiVersion": 2,
+  "statusCode": 200,
+  "statusReason": "OK",
+  "time": "2025-04-16T14:08:50.617Z",
+  "baseDomain": "stag.au.parent.gaspar.test",
+  "dataCenter": "eu1",
+  "trustedSiteURLs": [
+    "stag.au.parent.gaspar.test/*",
+    "*.stag.au.parent.gaspar.test/*"
+  ],
+  "tags": [],
+  "description": "NA6",
+  "captchaProvider": "Google",
+  "settings": {
+    "CNAME": "",
+    "shortURLDomain": "",
+    "shortURLRedirMethod": "js",
+    "encryptPII": true
+  },
+  "siteGroupConfig": {
+    "members": [
+      "4_IPOAc95FA8i7Rg7H2c4VEg"
+    ],
+    "enableSSO": false
+  },
+  "trustedShareURLs": [
+    "bit.ly/*",
+    "fw.to/*",
+    "shr.gs/*",
+    "vst.to/*",
+    "socli.ru/*",
+    "s.gigya-api.cn/*"
+  ],
+  "enableDataSharing": true,
+  "isCDP": false,
+  "globalConf": "undefined",
+  "invisibleRecaptcha": {},
+  "recaptchaV2": {},
+  "funCaptcha": {},
+  "customAPIDomainPrefix": "",
+  "jwtKeyVersion": 2,
+  "enableHSTS": false,
+  "context": "{\"id\":\"webSdk\",\"targetApiKey\":\"4_QwkHadMVg-KI68XYT2I3vA\"}"
+}
