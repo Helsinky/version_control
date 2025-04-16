@@ -1,0 +1,43 @@
+{
+  "callId": "694f33dc4371432fbf3e555c25a05ebf",
+  "errorCode": 0,
+  "apiVersion": 2,
+  "statusCode": 200,
+  "statusReason": "OK",
+  "time": "2025-04-16T16:51:26.489Z",
+  "baseDomain": "testing_version_control",
+  "dataCenter": "eu1",
+  "trustedSiteURLs": [
+    "testing_version_control/*",
+    "*.testing_version_control/*"
+  ],
+  "tags": [],
+  "description": "",
+  "captchaProvider": "Google",
+  "settings": {
+    "CNAME": "",
+    "shortURLDomain": "",
+    "shortURLRedirMethod": "js",
+    "encryptPII": true
+  },
+  "siteGroupConfig": {
+    "enableSSO": false
+  },
+  "trustedShareURLs": [
+    "bit.ly/*",
+    "fw.to/*",
+    "shr.gs/*",
+    "vst.to/*",
+    "socli.ru/*",
+    "s.gigya-api.cn/*"
+  ],
+  "enableDataSharing": true,
+  "isCDP": false,
+  "invisibleRecaptcha": {},
+  "recaptchaV2": {},
+  "funCaptcha": {},
+  "customAPIDomainPrefix": "",
+  "jwtKeyVersion": 3,
+  "enableHSTS": false,
+  "context": "{\"id\":\"webSdk\",\"targetApiKey\":\"4_yB9eX0cBp04xuh0RPADT1A\"}"
+}
