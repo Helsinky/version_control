@@ -1,0 +1,38 @@
+{
+  "callId": "23c730cd747d46b4862f56c9fb5c2108",
+  "context": "{\"id\":\"extensions\",\"targetApiKey\":\"4_bH1vbCSPWGaCxCqBv_eb7A\"}",
+  "errorCode": 0,
+  "apiVersion": 2,
+  "statusCode": 200,
+  "statusReason": "OK",
+  "time": "2025-04-16T16:17:09.919Z",
+  "result": [
+    {
+      "created": "2024-10-18T14:20:15.6597485Z",
+      "lastModified": "2025-04-14T10:01:41.7780035Z",
+      "extensionFuncUrl": "https://console.gigya.com/#/79597568/4_6Tv6z8O6NmUO_BZoHcXIRw",
+      "description": "so prar teste ",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "headers": [],
+      "integration": "Generic",
+      "id": "5a2083a85f9a494dab8bf8c245788c8b",
+      "extensionPoint": "OnBeforeAccountsRegister",
+      "friendlyName": "testingExtension",
+      "enabled": false
+    },
+    {
+      "created": "2024-10-18T14:20:15.6708383Z",
+      "lastModified": "2025-04-14T10:01:41.7177296Z",
+      "extensionFuncUrl": "https://console.gigya.com/#/79597568/4_6Tv6z8O6NmUO_BZoHcXIRw",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "headers": [],
+      "integration": "Generic",
+      "id": "5370e05d24e74906aac090e529e78539",
+      "extensionPoint": "OnBeforeSetAccountInfo",
+      "friendlyName": "testingTool",
+      "enabled": false
+    }
+  ]
+}

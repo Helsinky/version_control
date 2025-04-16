@@ -1,0 +1,128 @@
+{
+  "callId": "2cb30886192f404ab69ad1c813d429e0",
+  "context": "{}",
+  "errorCode": 0,
+  "errorDetails": "",
+  "apiVersion": 2,
+  "statusCode": 200,
+  "statusReason": "OK",
+  "time": "2025-04-16T16:17:10.068Z",
+  "results": [
+    {
+      "topicChannelId": "C_whatsApp",
+      "channel": "whatsApp",
+      "topic": "marketing",
+      "description": "",
+      "lastModified": "2025-04-14T08:08:58.168Z"
+    },
+    {
+      "topicChannelId": "T_Email",
+      "channel": "Email",
+      "topic": "transactional",
+      "description": "",
+      "lastModified": "2025-04-14T08:08:58.150Z"
+    },
+    {
+      "topicChannelId": "C_Email",
+      "channel": "Email",
+      "topic": "marketing",
+      "description": "",
+      "lastModified": "2025-04-14T08:08:58.144Z"
+    },
+    {
+      "schema": {
+        "properties": {
+          "optIn": {
+            "properties": {
+              "data2": {
+                "type": "string"
+              },
+              "data1": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "data1"
+            ]
+          }
+        }
+      },
+      "topicChannelId": "TEST_SMS",
+      "channel": "SMS",
+      "topic": "Test",
+      "description": "TEST_SMS_DESCRIPTION",
+      "lastModified": "2025-04-14T10:01:41.930Z"
+    },
+    {
+      "schema": {
+        "properties": {
+          "optIn": {
+            "properties": {
+              "acceptanceLocation": {
+                "type": "string"
+              },
+              "sourceApplication": {
+                "type": "string"
+              }
+            },
+            "required": []
+          }
+        }
+      },
+      "topicChannelId": "C_mobileApp",
+      "channel": "mobileApp",
+      "topic": "marketing",
+      "description": "",
+      "lastModified": "2025-04-14T08:08:58.156Z"
+    },
+    {
+      "topicChannelId": "T_SMS",
+      "channel": "SMS",
+      "topic": "transactional",
+      "description": "",
+      "lastModified": "2025-04-14T08:08:58.176Z"
+    },
+    {
+      "schema": {
+        "properties": {
+          "optIn": {
+            "properties": {
+              "acceptanceLocation": {
+                "type": "string"
+              }
+            },
+            "required": []
+          }
+        }
+      },
+      "topicChannelId": "C_SMS",
+      "channel": "SMS",
+      "topic": "marketing",
+      "description": "",
+      "lastModified": "2025-04-14T08:08:58.162Z"
+    },
+    {
+      "schema": {
+        "properties": {
+          "optIn": {
+            "properties": {
+              "data1": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "data1"
+            ]
+          }
+        }
+      },
+      "topicChannelId": "TEST_EMAIL",
+      "channel": "Email",
+      "topic": "Test",
+      "description": "TEST_EMAIL_DESC",
+      "lastModified": "2025-04-14T10:01:41.936Z"
+    }
+  ],
+  "objectsCount": 8,
+  "totalCount": 8
+}
