@@ -1,0 +1,36 @@
+{
+  "baseDomain": "guilherme.vc.5",
+  "dataCenter": "eu1",
+  "trustedSiteURLs": [
+    "guilherme.vc.5/*",
+    "*.guilherme.vc.5/*"
+  ],
+  "tags": [],
+  "description": "version_control",
+  "captchaProvider": "Google",
+  "settings": {
+    "CNAME": "",
+    "shortURLDomain": "",
+    "shortURLRedirMethod": "js",
+    "encryptPII": true
+  },
+  "siteGroupConfig": {
+    "enableSSO": false
+  },
+  "trustedShareURLs": [
+    "bit.ly/*",
+    "fw.to/*",
+    "shr.gs/*",
+    "vst.to/*",
+    "socli.ru/*",
+    "s.gigya-api.cn/*"
+  ],
+  "enableDataSharing": true,
+  "isCDP": false,
+  "invisibleRecaptcha": {},
+  "recaptchaV2": {},
+  "funCaptcha": {},
+  "customAPIDomainPrefix": "",
+  "jwtKeyVersion": 3,
+  "enableHSTS": false
+}
