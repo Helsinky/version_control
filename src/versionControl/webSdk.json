@@ -1,0 +1,36 @@
+{
+  "baseDomain": "testing_version_control_guilherme",
+  "dataCenter": "eu1",
+  "trustedSiteURLs": [
+    "testing_version_control_guilherme/*",
+    "*.testing_version_control_guilherme/*"
+  ],
+  "tags": [],
+  "description": "testing",
+  "captchaProvider": "Google",
+  "settings": {
+    "CNAME": "",
+    "shortURLDomain": "",
+    "shortURLRedirMethod": "js",
+    "encryptPII": true
+  },
+  "siteGroupConfig": {
+    "enableSSO": false
+  },
+  "trustedShareURLs": [
+    "bit.ly/*",
+    "fw.to/*",
+    "shr.gs/*",
+    "vst.to/*",
+    "socli.ru/*",
+    "s.gigya-api.cn/*"
+  ],
+  "enableDataSharing": true,
+  "isCDP": false,
+  "invisibleRecaptcha": {},
+  "recaptchaV2": {},
+  "funCaptcha": {},
+  "customAPIDomainPrefix": "",
+  "jwtKeyVersion": 3,
+  "enableHSTS": false
+}
