@@ -31,6 +31,6 @@
   "recaptchaV2": {},
   "funCaptcha": {},
   "customAPIDomainPrefix": "",
-  "jwtKeyVersion": 3,
+  "jwtKeyVersion": 2,
   "enableHSTS": false
 }
