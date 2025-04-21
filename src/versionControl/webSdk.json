@@ -1,22 +1,4 @@
 {
-  "baseDomain": "guilherme.vc.6",
-  "dataCenter": "au1",
-  "trustedSiteURLs": [
-    "guilherme.vc.6/*",
-    "*.guilherme.vc.6/*"
-  ],
-  "tags": [],
-  "description": "version_control",
-  "captchaProvider": "Google",
-  "settings": {
-    "CNAME": "",
-    "shortURLDomain": "",
-    "shortURLRedirMethod": "js",
-    "encryptPII": true
-  },
-  "siteGroupConfig": {
-    "enableSSO": false
-  },
   "trustedShareURLs": [
     "bit.ly/*",
     "fw.to/*",
