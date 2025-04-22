@@ -27,11 +27,10 @@
   ],
   "enableDataSharing": true,
   "isCDP": false,
-  "globalConf": "tester",
+  "globalConf": "undefined",
   "invisibleRecaptcha": {},
   "recaptchaV2": {},
   "funCaptcha": {},
   "customAPIDomainPrefix": "",
-  "jwtKeyVersion": 2,
   "enableHSTS": false
 }
