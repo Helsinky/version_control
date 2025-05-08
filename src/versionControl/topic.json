@@ -1,0 +1,50 @@
+{
+  "errorDetails": "",
+  "results": [
+    {
+      "schema": {
+        "properties": {
+          "optIn": {
+            "properties": {
+              "data1": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "data1"
+            ]
+          }
+        }
+      },
+      "topicChannelId": "TEST_EMAIL",
+      "channel": "Email",
+      "topic": "Test",
+      "description": "TEST_EMAIL_DESC"
+    },
+    {
+      "schema": {
+        "properties": {
+          "optIn": {
+            "properties": {
+              "data2": {
+                "type": "string"
+              },
+              "data1": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "data1"
+            ]
+          }
+        }
+      },
+      "topicChannelId": "TEST_SMS",
+      "channel": "SMS",
+      "topic": "Test",
+      "description": "TEST_SMS_DESCRIPTION"
+    }
+  ],
+  "objectsCount": 2,
+  "totalCount": 2
+}

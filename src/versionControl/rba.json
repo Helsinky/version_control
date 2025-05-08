@@ -1,0 +1,63 @@
+[
+  {
+    "Enabled": false
+  },
+  {
+    "policy": {
+      "commonRules": [
+        {
+          "action": {
+            "scope": [
+              "IP"
+            ],
+            "type": "captcha"
+          },
+          "rootFactor": {
+            "type": "failedLogins",
+            "scope": [
+              "IP"
+            ],
+            "threshold": 200,
+            "resetInterval": 3600
+          },
+          "id": "On multiple failed login attempts > force CAPTCHA on IP",
+          "scope": "Login",
+          "description": "On multiple failed login attempts > force CAPTCHA on IP",
+          "enabled": true
+        },
+        {
+          "action": {
+            "duration": 600,
+            "scope": [
+              "account"
+            ],
+            "type": "lockout"
+          },
+          "rootFactor": {
+            "type": "failedLogins",
+            "scope": [
+              "account"
+            ],
+            "threshold": 10,
+            "resetInterval": 3600
+          },
+          "id": "Testing",
+          "scope": "Login",
+          "description": "On multiple failed login attempts > lockout account",
+          "enabled": true
+        }
+      ],
+      "rulesSets": [
+        {
+          "rules": [],
+          "id": "_off",
+          "description": "This policy represents a policy without any validations",
+          "enabled": true
+        }
+      ],
+      "tfaRegistrationScope": false,
+      "defaultPolicy": "_off",
+      "allowOverrideMode": "no"
+    }
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "result": [
+    {
+      "created": "2024-02-21T17:48:55.9487219Z",
+      "extensionFuncUrl": "https://console.gigya.com/#/79597568/4_6Tv6z8O6NmUO",
+      "description": "",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "headers": [],
+      "integration": "Generic",
+      "id": "74cd211e30e94e609b4197c2da4223c7",
+      "extensionPoint": "OnBeforeAccountsRegister",
+      "friendlyName": "testingExtension",
+      "enabled": false
+    },
+    {
+      "created": "2024-02-21T17:49:09.8353109Z",
+      "extensionFuncUrl": "https://console.gigya.com/#/79597568/4_6Tv6z8O6NmUO",
+      "description": "",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "headers": [],
+      "integration": "Generic",
+      "id": "0305e54ecd3c48079ea4a2f8c51d251d",
+      "extensionPoint": "OnBeforeSetAccountInfo",
+      "friendlyName": "testingTool",
+      "enabled": false
+    }
+  ]
+}
