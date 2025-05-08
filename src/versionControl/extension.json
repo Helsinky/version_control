@@ -1,0 +1,28 @@
+{
+  "result": [
+    {
+      "created": "2025-05-02T13:33:41.3173319Z",
+      "extensionFuncUrl": "https://www.google.xpto.com",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "headers": [],
+      "integration": "Generic",
+      "id": "48097bffd6094184a7f5f26ce7d49611",
+      "extensionPoint": "OnBeforeAccountsLogin",
+      "friendlyName": "test",
+      "enabled": false
+    },
+    {
+      "created": "2025-05-02T14:07:36.8528364Z",
+      "extensionFuncUrl": "https://www.google.xpto.com",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "headers": [],
+      "integration": "Generic",
+      "id": "92d111e3d151405eb5034f3a38a13396",
+      "extensionPoint": "OnBeforeSetAccountInfo",
+      "friendlyName": "test",
+      "enabled": false
+    }
+  ]
+}
