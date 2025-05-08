@@ -780,40 +780,7 @@
     "dynamicSchema": false
   },
   "dataSchema": {
-    "fields": {
-      "integerField": {
-        "required": false,
-        "type": "integer",
-        "allowNull": false,
-        "writeAccess": "clientModify"
-      },
-      "terms": {
-        "required": false,
-        "type": "boolean",
-        "allowNull": true,
-        "writeAccess": "clientModify"
-      },
-      "subscribe": {
-        "required": false,
-        "type": "boolean",
-        "allowNull": true,
-        "writeAccess": "clientModify"
-      },
-      "data_test_schema": {
-        "required": false,
-        "type": "string",
-        "allowNull": true,
-        "writeAccess": "clientModify",
-        "subType": "phone"
-      },
-      "test": {
-        "required": false,
-        "type": "string",
-        "allowNull": true,
-        "writeAccess": "clientModify",
-        "subType": "phone"
-      }
-    },
+    "fields": {},
     "dynamicSchema": true
   },
   "subscriptionsSchema": {
