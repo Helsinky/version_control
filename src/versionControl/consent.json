@@ -1,0 +1,113 @@
+{
+  "callId": "261b66841bf548dcb4a56ff519866ce3",
+  "context": "{\"id\":\"consent_consentStatement_get\",\"targetApiKey\":\"4_QwkHadMVg-KI68XYT2I3vA\"}",
+  "errorCode": 0,
+  "apiVersion": 2,
+  "statusCode": 200,
+  "statusReason": "OK",
+  "time": "2025-04-16T14:08:50.762Z",
+  "preferences": {
+    "terms.consent1": {
+      "isActive": false,
+      "isMandatory": true,
+      "langs": [
+        "en",
+        "ca"
+      ],
+      "consentVaultRetentionPeriod": 36,
+      "enforceLocaleReconsent": true,
+      "writeAccess": "clientModify",
+      "legalStatements": {
+        "en": {
+          "currentDocVersion": 0,
+          "minDocVersion": 0,
+          "versions": {
+            "0": {
+              "purpose": "consent1 test0",
+              "documentUrl": "https://www.google.pt",
+              "LegalStatementStatus": "Draft"
+            },
+            "1": {
+              "purpose": "consent1 test1",
+              "documentUrl": "https://www.google.pt",
+              "LegalStatementStatus": "Draft"
+            }
+          }
+        },
+        "ca": {
+          "currentDocVersion": 0,
+          "minDocVersion": 0,
+          "versions": {
+            "0": {
+              "purpose": "test0",
+              "documentUrl": "https://www.google.pt",
+              "LegalStatementStatus": "Draft"
+            }
+          }
+        }
+      }
+    },
+    "privacy.policy1": {
+      "isActive": false,
+      "isMandatory": true,
+      "langs": [
+        "en",
+        "da",
+        "fr"
+      ],
+      "consentVaultRetentionPeriod": 36,
+      "enforceLocaleReconsent": true,
+      "writeAccess": "clientModify",
+      "legalStatements": {
+        "en": {
+          "currentDocVersion": 0,
+          "minDocVersion": 0,
+          "versions": {
+            "0": {
+              "purpose": "teste0",
+              "documentUrl": "www.gooogle.pt",
+              "LegalStatementStatus": "Draft"
+            },
+            "1": {
+              "purpose": "teste1",
+              "documentUrl": "www.gooogle.pt",
+              "LegalStatementStatus": "Draft"
+            }
+          }
+        },
+        "da": {
+          "publishedDocVersion": 1,
+          "currentDocVersion": 1,
+          "minDocVersion": 1,
+          "versions": {
+            "0": {
+              "purpose": "test0",
+              "documentUrl": "https://www.google.pt"
+            },
+            "1": {
+              "purpose": "test1",
+              "documentUrl": "https://www.google.pt",
+              "LegalStatementStatus": "Published"
+            }
+          }
+        },
+        "fr": {
+          "currentDocVersion": 0,
+          "minDocVersion": 0,
+          "versions": {
+            "0": {
+              "purpose": "test0",
+              "documentUrl": "https://www.google.pt",
+              "LegalStatementStatus": "Draft"
+            },
+            "1": {
+              "purpose": "test1",
+              "documentUrl": "https://www.google.pt",
+              "LegalStatementStatus": "Draft"
+            }
+          }
+        }
+      }
+    }
+  }
+}
