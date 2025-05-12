@@ -37,7 +37,7 @@
         "format": "regex('^(?=(.{1,64}@.{1,255}))([!#$%&'*+\\-\\/=?\\^_`{|}~a-zA-Z0-9}]{1,64}(\\.[!#$%&'*+\\-\\/=?\\^_`{|}~a-zA-Z0-9]{0,}){0,})@((\\[(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}\\])|([a-zA-Z0-9-]{1,63}(\\.[a-zA-Z0-9-]{2,63}){1,}))$')",
         "type": "string",
         "allowNull": true,
-        "writeAccess": "serverOnly",
+        "writeAccess": "clientModify",
         "encrypt": "AES"
       },
       "lastLoginLocation.city": {
@@ -130,7 +130,7 @@
         "required": false,
         "type": "long",
         "allowNull": true,
-        "writeAccess": "serverOnly"
+        "writeAccess": "clientModify"
       },
       "timezone": {
         "required": false,
@@ -224,11 +224,11 @@
         "required": false,
         "type": "string",
         "allowNull": true,
-        "writeAccess": "serverOnly",
+        "writeAccess": "clientModify",
         "encrypt": "AES"
       },
       "address": {
-        "required": false,
+        "required": true,
         "type": "string",
         "allowNull": true,
         "writeAccess": "serverOnly",
@@ -523,7 +523,7 @@
         "required": false,
         "type": "string",
         "allowNull": true,
-        "writeAccess": "serverOnly",
+        "writeAccess": "clientModify",
         "encrypt": "AES"
       },
       "patents.status": {
@@ -708,7 +708,7 @@
         "required": false,
         "type": "string",
         "allowNull": true,
-        "writeAccess": "serverOnly",
+        "writeAccess": "clientModify",
         "encrypt": "AES"
       },
       "work.location": {
@@ -735,7 +735,7 @@
         "required": false,
         "type": "string",
         "allowNull": true,
-        "writeAccess": "serverOnly",
+        "writeAccess": "clientModify",
         "encrypt": "AES"
       },
       "oidcData.address.postal_code": {
@@ -764,7 +764,7 @@
         "writeAccess": "serverOnly"
       },
       "activities": {
-        "required": false,
+        "required": true,
         "type": "string",
         "allowNull": true,
         "writeAccess": "serverOnly"
@@ -780,7 +780,20 @@
     "dynamicSchema": false
   },
   "dataSchema": {
-    "fields": {},
+    "fields": {
+      "terms": {
+        "required": true,
+        "type": "boolean",
+        "allowNull": true,
+        "writeAccess": "clientModify"
+      },
+      "subscribe": {
+        "required": true,
+        "type": "boolean",
+        "allowNull": true,
+        "writeAccess": "clientModify"
+      }
+    },
     "dynamicSchema": true
   },
   "subscriptionsSchema": {
