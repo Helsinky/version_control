@@ -4,242 +4,6 @@
     {
       "apiKey": "4_PSmOpHt311ErLZUuIEZrSg",
       "siteId": 188090188070,
-      "id": "59be2a0b51974948bc1c36e9a3ad2bfa",
-      "name": "Krux_Dataflow",
-      "status": "draft",
-      "description": "account > rename > krux > lzo > s3",
-      "steps": [
-        {
-          "id": "account",
-          "type": "datasource.read.gigya.account",
-          "params": {
-            "select": "UID,profile.gender,profile.age",
-            "from": "accounts",
-            "deltaField": "lastUpdatedTimestamp",
-            "keepFieldNamesWithDotAsIs": false,
-            "batchSize": 300,
-            "maxConcurrency": 1
-          },
-          "next": [
-            "rename"
-          ]
-        },
-        {
-          "id": "rename",
-          "type": "field.rename",
-          "params": {
-            "fields": [
-              {
-                "sourceField": "UID",
-                "targetField": "id"
-              },
-              {
-                "sourceField": "profile.gender",
-                "targetField": "g_gender"
-              },
-              {
-                "sourceField": "profile.age",
-                "targetField": "g_age"
-              },
-              {
-                "sourceField": "profile.likes",
-                "targetField": "likes"
-              }
-            ]
-          },
-          "next": [
-            "krux"
-          ]
-        },
-        {
-          "id": "krux",
-          "type": "file.format.krux",
-          "params": {
-            "fileName": "Gigya_Krux_M6.csv",
-            "createEmptyFile": true,
-            "quoteFields": false,
-            "separator": ";"
-          },
-          "next": [
-            "lzo"
-          ]
-        },
-        {
-          "id": "lzo",
-          "type": "file.compress.lzo",
-          "params": {
-            "createIndexFile": true
-          },
-          "next": [
-            "s3"
-          ]
-        },
-        {
-          "id": "s3",
-          "type": "datasource.write.amazon.s3",
-          "params": {
-            "bucketName": "...",
-            "accessKey": "...",
-            "secretKey": "********",
-            "objectKeyPrefix": "...",
-            "region": "not specified"
-          }
-        }
-      ],
-      "createTime": "2025-04-14T19:13:07.14Z",
-      "updateTime": "2025-04-14T19:13:07.14Z",
-      "updatedByName": "Bruno Santos",
-      "updatedByEmail": "b.santos@sap.com"
-    },
-    {
-      "apiKey": "4_PSmOpHt311ErLZUuIEZrSg",
-      "siteId": 188090188070,
-      "id": "ec88af3711434966a7cb91fbea762edc",
-      "name": "TESTING DATAFLOW",
-      "status": "draft",
-      "description": "account > rename > dsv > gzip > sftp",
-      "steps": [
-        {
-          "id": "account",
-          "type": "datasource.read.gigya.account",
-          "params": {
-            "select": "profile.email,profile.lastName,profile.firstName,profile.gender,profile.birthDay,profile.birthMonth,profile.birthYear,profile.address,profile.zip,profile.city,profile.state,profile.country,profile.phones.number,profile.nickname",
-            "from": "accounts",
-            "deltaField": "lastUpdatedTimestamp",
-            "keepFieldNamesWithDotAsIs": false,
-            "batchSize": 300,
-            "maxConcurrency": 1
-          },
-          "next": [
-            "rename"
-          ]
-        },
-        {
-          "id": "rename",
-          "type": "field.rename",
-          "params": {
-            "fields": [
-              {
-                "sourceField": "profile.email",
-                "targetField": "MAIL"
-              },
-              {
-                "sourceField": "profile.lastName",
-                "targetField": "NAME"
-              },
-              {
-                "sourceField": "profile.firstName",
-                "targetField": "FIRSTNAME"
-              },
-              {
-                "sourceField": "profile.gender",
-                "targetField": "GENDER"
-              },
-              {
-                "sourceField": "profile.birthDay",
-                "targetField": "BIRTH_DAY"
-              },
-              {
-                "sourceField": "profile.birthMonth",
-                "targetField": "BIRTH_MONTH"
-              },
-              {
-                "sourceField": "profile.birthYear",
-                "targetField": "BIRTH_YEAR"
-              },
-              {
-                "sourceField": "profile.address",
-                "targetField": "STREET"
-              },
-              {
-                "sourceField": "profile.zip",
-                "targetField": "POSTALCODE"
-              },
-              {
-                "sourceField": "profile.city",
-                "targetField": "CITY"
-              },
-              {
-                "sourceField": "profile.state",
-                "targetField": "PROVINCE"
-              },
-              {
-                "sourceField": "profile.country",
-                "targetField": "COUNTRY"
-              },
-              {
-                "sourceField": "profile.phones",
-                "targetField": "PHONE"
-              },
-              {
-                "sourceField": "profile.nickname",
-                "targetField": "USERNAME"
-              }
-            ]
-          },
-          "next": [
-            "remove"
-          ]
-        },
-        {
-          "id": "remove",
-          "type": "field.remove",
-          "params": {
-            "fields": [
-              "profile"
-            ]
-          },
-          "next": [
-            "dsv"
-          ]
-        },
-        {
-          "id": "dsv",
-          "type": "file.format.dsv",
-          "params": {
-            "fileName": "GIGYA_TO_SFTP_${now}.csv",
-            "columnSeparator": ",",
-            "escapeCharacter": "\"",
-            "quoteFields": true,
-            "maxFileSize": 5000,
-            "writeHeader": true,
-            "dsvFormatVersion": "Legacy",
-            "lineEnd": "\n",
-            "createEmptyFile": false
-          },
-          "next": [
-            "gzip"
-          ]
-        },
-        {
-          "id": "gzip",
-          "type": "file.compress.gzip",
-          "next": [
-            "sftp"
-          ]
-        },
-        {
-          "id": "sftp",
-          "type": "datasource.write.sftp",
-          "params": {
-            "host": "...",
-            "username": "...",
-            "password": "********",
-            "remotePath": "GigyaDaily",
-            "port": 22,
-            "timeout": 60,
-            "temporaryUploadExtension": false
-          }
-        }
-      ],
-      "createTime": "2025-04-14T19:13:07.171Z",
-      "updateTime": "2025-04-14T19:13:07.171Z",
-      "updatedByName": "Bruno Santos",
-      "updatedByEmail": "b.santos@sap.com"
-    },
-    {
-      "apiKey": "4_PSmOpHt311ErLZUuIEZrSg",
-      "siteId": 188090188070,
       "id": "3611182e0ed54a9e844ef0ec96ac0e06",
       "name": "Import Lite Accounts from SFTP",
       "status": "draft",
@@ -530,6 +294,242 @@
       ],
       "createTime": "2025-04-14T19:13:07.077Z",
       "updateTime": "2025-04-14T19:13:07.077Z",
+      "updatedByName": "Bruno Santos",
+      "updatedByEmail": "b.santos@sap.com"
+    },
+    {
+      "apiKey": "4_PSmOpHt311ErLZUuIEZrSg",
+      "siteId": 188090188070,
+      "id": "59be2a0b51974948bc1c36e9a3ad2bfa",
+      "name": "Krux_Dataflow",
+      "status": "draft",
+      "description": "account > rename > krux > lzo > s3",
+      "steps": [
+        {
+          "id": "account",
+          "type": "datasource.read.gigya.account",
+          "params": {
+            "select": "UID,profile.gender,profile.age",
+            "from": "accounts",
+            "deltaField": "lastUpdatedTimestamp",
+            "keepFieldNamesWithDotAsIs": false,
+            "batchSize": 300,
+            "maxConcurrency": 1
+          },
+          "next": [
+            "rename"
+          ]
+        },
+        {
+          "id": "rename",
+          "type": "field.rename",
+          "params": {
+            "fields": [
+              {
+                "sourceField": "UID",
+                "targetField": "id"
+              },
+              {
+                "sourceField": "profile.gender",
+                "targetField": "g_gender"
+              },
+              {
+                "sourceField": "profile.age",
+                "targetField": "g_age"
+              },
+              {
+                "sourceField": "profile.likes",
+                "targetField": "likes"
+              }
+            ]
+          },
+          "next": [
+            "krux"
+          ]
+        },
+        {
+          "id": "krux",
+          "type": "file.format.krux",
+          "params": {
+            "fileName": "Gigya_Krux_M6.csv",
+            "createEmptyFile": true,
+            "quoteFields": false,
+            "separator": ";"
+          },
+          "next": [
+            "lzo"
+          ]
+        },
+        {
+          "id": "lzo",
+          "type": "file.compress.lzo",
+          "params": {
+            "createIndexFile": true
+          },
+          "next": [
+            "s3"
+          ]
+        },
+        {
+          "id": "s3",
+          "type": "datasource.write.amazon.s3",
+          "params": {
+            "bucketName": "...",
+            "accessKey": "...",
+            "secretKey": "********",
+            "objectKeyPrefix": "...",
+            "region": "not specified"
+          }
+        }
+      ],
+      "createTime": "2025-04-14T19:13:07.14Z",
+      "updateTime": "2025-04-14T19:13:07.14Z",
+      "updatedByName": "Bruno Santos",
+      "updatedByEmail": "b.santos@sap.com"
+    },
+    {
+      "apiKey": "4_PSmOpHt311ErLZUuIEZrSg",
+      "siteId": 188090188070,
+      "id": "ec88af3711434966a7cb91fbea762edc",
+      "name": "TESTING DATAFLOW",
+      "status": "draft",
+      "description": "account > rename > dsv > gzip > sftp",
+      "steps": [
+        {
+          "id": "account",
+          "type": "datasource.read.gigya.account",
+          "params": {
+            "select": "profile.email,profile.lastName,profile.firstName,profile.gender,profile.birthDay,profile.birthMonth,profile.birthYear,profile.address,profile.zip,profile.city,profile.state,profile.country,profile.phones.number,profile.nickname",
+            "from": "accounts",
+            "deltaField": "lastUpdatedTimestamp",
+            "keepFieldNamesWithDotAsIs": false,
+            "batchSize": 300,
+            "maxConcurrency": 1
+          },
+          "next": [
+            "rename"
+          ]
+        },
+        {
+          "id": "rename",
+          "type": "field.rename",
+          "params": {
+            "fields": [
+              {
+                "sourceField": "profile.email",
+                "targetField": "MAIL"
+              },
+              {
+                "sourceField": "profile.lastName",
+                "targetField": "NAME"
+              },
+              {
+                "sourceField": "profile.firstName",
+                "targetField": "FIRSTNAME"
+              },
+              {
+                "sourceField": "profile.gender",
+                "targetField": "GENDER"
+              },
+              {
+                "sourceField": "profile.birthDay",
+                "targetField": "BIRTH_DAY"
+              },
+              {
+                "sourceField": "profile.birthMonth",
+                "targetField": "BIRTH_MONTH"
+              },
+              {
+                "sourceField": "profile.birthYear",
+                "targetField": "BIRTH_YEAR"
+              },
+              {
+                "sourceField": "profile.address",
+                "targetField": "STREET"
+              },
+              {
+                "sourceField": "profile.zip",
+                "targetField": "POSTALCODE"
+              },
+              {
+                "sourceField": "profile.city",
+                "targetField": "CITY"
+              },
+              {
+                "sourceField": "profile.state",
+                "targetField": "PROVINCE"
+              },
+              {
+                "sourceField": "profile.country",
+                "targetField": "COUNTRY"
+              },
+              {
+                "sourceField": "profile.phones",
+                "targetField": "PHONE"
+              },
+              {
+                "sourceField": "profile.nickname",
+                "targetField": "USERNAME"
+              }
+            ]
+          },
+          "next": [
+            "remove"
+          ]
+        },
+        {
+          "id": "remove",
+          "type": "field.remove",
+          "params": {
+            "fields": [
+              "profile"
+            ]
+          },
+          "next": [
+            "dsv"
+          ]
+        },
+        {
+          "id": "dsv",
+          "type": "file.format.dsv",
+          "params": {
+            "fileName": "GIGYA_TO_SFTP_${now}.csv",
+            "columnSeparator": ",",
+            "escapeCharacter": "\"",
+            "quoteFields": true,
+            "maxFileSize": 5000,
+            "writeHeader": true,
+            "dsvFormatVersion": "Legacy",
+            "lineEnd": "\n",
+            "createEmptyFile": false
+          },
+          "next": [
+            "gzip"
+          ]
+        },
+        {
+          "id": "gzip",
+          "type": "file.compress.gzip",
+          "next": [
+            "sftp"
+          ]
+        },
+        {
+          "id": "sftp",
+          "type": "datasource.write.sftp",
+          "params": {
+            "host": "...",
+            "username": "...",
+            "password": "********",
+            "remotePath": "GigyaDaily",
+            "port": 22,
+            "timeout": 60,
+            "temporaryUploadExtension": false
+          }
+        }
+      ],
+      "createTime": "2025-04-14T19:13:07.171Z",
+      "updateTime": "2025-04-14T19:13:07.171Z",
       "updatedByName": "Bruno Santos",
       "updatedByEmail": "b.santos@sap.com"
     }

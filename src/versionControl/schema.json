@@ -812,7 +812,7 @@
         "subType": "none"
       },
       "data_test_schema_2": {
-        "required": false,
+        "required": true,
         "type": "string",
         "allowNull": true,
         "writeAccess": "clientModify",
@@ -894,7 +894,7 @@
         "writeAccess": "serverOnly"
       },
       "data_test_schema": {
-        "required": false,
+        "required": true,
         "type": "string",
         "allowNull": true,
         "writeAccess": "clientModify",
