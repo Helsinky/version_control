@@ -1,0 +1,44 @@
+{
+  "result": [
+    {
+      "created": "2025-04-14T19:13:07.029707Z",
+      "extensionFuncUrl": "https://github.tools.sap/cx-servicesautomation/cdc-tools-chrome-extension/src/constants.js",
+      "description": "extension description",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "headers": [
+        {
+          "name": "Header1",
+          "value": "Header1Value"
+        }
+      ],
+      "integration": "Generic",
+      "id": "b68ecf9ff518468e8d35b8ca4b32f558",
+      "extensionPoint": "OnBeforeAccountsRegister",
+      "friendlyName": "extension1",
+      "enabled": true
+    },
+    {
+      "created": "2025-04-14T19:13:07.0297308Z",
+      "extensionFuncUrl": "https://github.tools.sap/cx-servicesautomation/cdc-tools-chrome-extension/src/constants2.js",
+      "description": "description",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "headers": [
+        {
+          "name": "Header21",
+          "value": "Header21Value"
+        },
+        {
+          "name": "Header2",
+          "value": "Header2Value"
+        }
+      ],
+      "integration": "Generic",
+      "id": "7cd763f676ef4f2082c229c42fea6e0f",
+      "extensionPoint": "OnBeforeAccountsLogin",
+      "friendlyName": "extension2",
+      "enabled": false
+    }
+  ]
+}

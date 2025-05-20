@@ -1,0 +1,21 @@
+{
+  "webhooks": [
+    {
+      "url": "https://testtemplates.com/",
+      "name": "_cdc-toolbox-source-templates_",
+      "active": true,
+      "events": [
+        "accountCreated",
+        "accountRegistered",
+        "accountUpdated",
+        "accountDeleted",
+        "accountLoggedIn"
+      ],
+      "useXfCredentials": false,
+      "headers": [],
+      "product": "UserManagement",
+      "id": "e498884a-163d-4328-b0c6-e394cc50994d",
+      "urlType": "Http"
+    }
+  ]
+}

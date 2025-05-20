@@ -1,0 +1,168 @@
+{
+  "preferences": {
+    "terms.terms.termsConsentId1": {
+      "isActive": false,
+      "isMandatory": true,
+      "langs": [
+        "en",
+        "pt"
+      ],
+      "consentVaultRetentionPeriod": 36,
+      "defaultLang": "pt",
+      "enforceLocaleReconsent": true,
+      "writeAccess": "clientModify",
+      "legalStatements": {
+        "en": {
+          "publishedDocVersion": 2,
+          "currentDocVersion": 2,
+          "minDocVersion": 2,
+          "versions": {
+            "2": {
+              "purpose": "english2",
+              "LegalStatementStatus": "Published"
+            }
+          }
+        },
+        "pt": {
+          "publishedDocVersion": 2,
+          "currentDocVersion": 2,
+          "minDocVersion": 2,
+          "versions": {
+            "2": {
+              "purpose": "portuguese",
+              "LegalStatementStatus": "Published"
+            }
+          }
+        }
+      }
+    },
+    "terms.test": {
+      "isActive": false,
+      "isMandatory": true,
+      "langs": [
+        "en"
+      ],
+      "customData": [],
+      "consentVaultRetentionPeriod": 36,
+      "defaultLang": "en",
+      "enforceLocaleReconsent": false,
+      "writeAccess": "clientModify",
+      "legalStatements": {
+        "en": {
+          "publishedDocDate": "2023-01-17T00:00:00.000Z",
+          "currentDocDate": "2023-01-17T00:00:00.000Z",
+          "minDocDate": "2023-01-17T00:00:00.000Z",
+          "dates": {
+            "2023-01-17T00:00:00.000Z": {
+              "LegalStatementStatus": "Published"
+            }
+          }
+        }
+      }
+    },
+    "terms.termsOfService": {
+      "isActive": false,
+      "isMandatory": true,
+      "langs": [
+        "en"
+      ],
+      "consentVaultRetentionPeriod": 36,
+      "enforceLocaleReconsent": true,
+      "writeAccess": "clientModify",
+      "legalStatements": {
+        "en": {
+          "publishedDocVersion": 1,
+          "currentDocVersion": 1,
+          "minDocVersion": 1,
+          "versions": {
+            "1": {
+              "purpose": "",
+              "documentUrl": "sap.com",
+              "LegalStatementStatus": "Published"
+            }
+          }
+        }
+      }
+    },
+    "terms.consentBruno2": {
+      "isActive": false,
+      "isMandatory": true,
+      "langs": [
+        "en"
+      ],
+      "consentVaultRetentionPeriod": 36,
+      "enforceLocaleReconsent": true,
+      "writeAccess": "clientModify",
+      "legalStatements": {
+        "en": {
+          "publishedDocVersion": 3,
+          "currentDocVersion": 3,
+          "minDocVersion": 3,
+          "versions": {
+            "2": {
+              "purpose": "",
+              "LegalStatementStatus": "Draft"
+            },
+            "3": {
+              "purpose": "",
+              "LegalStatementStatus": "Published"
+            }
+          }
+        }
+      }
+    },
+    "privacy.consentBruno3": {
+      "isActive": false,
+      "isMandatory": true,
+      "langs": [
+        "en"
+      ],
+      "consentVaultRetentionPeriod": 36,
+      "enforceLocaleReconsent": true,
+      "writeAccess": "clientModify",
+      "legalStatements": {
+        "en": {
+          "publishedDocDate": "2023-03-22T00:00:00.000Z",
+          "currentDocDate": "2023-03-22T00:00:00.000Z",
+          "minDocDate": "2023-03-22T00:00:00.000Z",
+          "dates": {
+            "2023-03-22T00:00:00.000Z": {
+              "purpose": "purpose explanation",
+              "LegalStatementStatus": "Published"
+            }
+          }
+        }
+      }
+    },
+    "terms.termsConsentId1": {
+      "isActive": true,
+      "isMandatory": true,
+      "langs": [
+        "en"
+      ],
+      "customData": [],
+      "consentVaultRetentionPeriod": 36,
+      "defaultLang": "en",
+      "enforceLocaleReconsent": false,
+      "writeAccess": "clientModify",
+      "legalStatements": {
+        "en": {
+          "publishedDocDate": "2024-04-26T00:00:00.000Z",
+          "currentDocDate": "2024-04-26T00:00:00.000Z",
+          "minDocDate": "2024-04-26T00:00:00.000Z",
+          "dates": {
+            "2024-04-26T00:00:00.000Z": {
+              "purpose": "",
+              "documentUrl": "https://test-en.dev_eu_en_test0/accounts.store.downloadPublicConsentDocument?docID=79597568_404138073853_3f46865b303b4a298f58058288a1e311.pdf",
+              "LegalStatementStatus": "Published"
+            },
+            "2023-03-22T00:00:00.000Z": {
+              "purpose": "This is a purpose",
+              "LegalStatementStatus": "Draft"
+            }
+          }
+        }
+      }
+    }
+  }
+}

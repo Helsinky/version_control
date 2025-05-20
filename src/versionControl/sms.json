@@ -1,0 +1,32 @@
+{
+  "templates": {
+    "tfa": {
+      "globalTemplates": {
+        "templates": {
+          "en": "Your verification code is: {{code}}",
+          "pt-br": "O seu código de verificação é:{{code}}"
+        },
+        "defaultLanguage": "en"
+      },
+      "templatesPerCountryCode": {
+        "355": {
+          "templates": {
+            "en": "{{code}}",
+            "bg": "{{code}}"
+          },
+          "defaultLanguage": "en"
+        }
+      }
+    },
+    "otp": {
+      "globalTemplates": {
+        "templates": {
+          "en": "Your verification code is: {{code}}",
+          "pt": "O seu código de verificação é: {{code}}"
+        },
+        "defaultLanguage": "en"
+      },
+      "templatesPerCountryCode": {}
+    }
+  }
+}
