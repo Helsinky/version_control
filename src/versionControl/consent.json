@@ -1,0 +1,28 @@
+{
+  "preferences": {
+    "terms.anonymousUsageAnalytics": {
+      "isActive": false,
+      "isMandatory": true,
+      "langs": [
+        "en"
+      ],
+      "consentVaultRetentionPeriod": 84,
+      "enforceLocaleReconsent": false,
+      "writeAccess": "clientModify",
+      "legalStatements": {
+        "en": {
+          "publishedDocVersion": 1,
+          "currentDocVersion": 1,
+          "minDocVersion": 1,
+          "versions": {
+            "1": {
+              "purpose": "",
+              "documentUrl": "https://accounts.eu1.gigya.com/accounts.store.downloadPublicConsentDocument?docID=75563087_798190334520_89241e4c32c54e0d903c1bd5222d6356.pdf",
+              "LegalStatementStatus": "Published"
+            }
+          }
+        }
+      }
+    }
+  }
+}
